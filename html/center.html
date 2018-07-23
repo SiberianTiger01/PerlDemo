@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+
+body{ margin:0; height:100%} 
+html{ height:100%} 
+left{ position:absolute; top:0; left:0; width:200px; height:100%; background-color:#CCCCCC} 
+right{ margin-left:200px; height:100%; background-color:#0099FF} 
+
+
+</style>
+</head>
+<body>
+
+<h1 align=center>Create & Delete Record</h1>
+<form  action="cgi-bin/add.pl"  method="get" >
+
+<p>
+<label>Name 
+<input type="text" name="name">
+</label> 
+</p>
+
+<p>
+<label>Age 
+<input type="number" name="age">
+</label>
+</p>
+
+<p>
+<label>Address
+<input type="text" name="address">
+</label>
+</p>
+
+<p>
+<label>Position 
+<input type="text" name="position">
+</label>
+</p>
+
+<p>
+<label>Salary 
+<input type="number" name="salary">
+</label>
+</p>
+
+
+
+<div style="width:50%;padding:0;margin:10;float:left;box-sizing:border-box;">
+<button type="submit">Create Record</button>
+</div>     
+<div style="width:50%;padding:0;margin:0;float:right;box-sizing:border-box;">
+<button type="submit"  formaction="cgi-bin/remove.pl">Delete Record</button>
+</div>
+
+</form>
+<br><hr>
+<p><strong>Note:</strong>
+ Please use  Internet Explorer 10 and more updated Browser versions.
+</p>
+
+</body>
+</html>
+
